@@ -16,8 +16,32 @@
         <h1 id="title">ETCH-A-SKETCH</h1>
     </header>
     <main>
+        <div class="buttons">
+            <button>
+                Gray scale
+            </button>
+            <button>
+                Rainbow
+            </button>
+            <button>
+                Color
+            </button>
+            <input class="colorPicker" type="color" value="#FC8804">
+        </div>
         <div id="etch-a-sketch">
             <div id="container"></div>
+        </div>
+        <div class="buttons">
+            <div>
+                <div id="size">Size: <span>x</span></div>
+                <input class="size" type="range" value="1" min="1" max="100">
+            </div>
+            <button class="rightSide">
+                Eraser
+            </button>
+            <button class="rightSide">
+                Clear
+            </button>
         </div>
     </main>
     <footer>

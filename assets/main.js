@@ -1,4 +1,4 @@
-let n = 92;
+let n = 100;
 let totalSquares = n * n;
 
 let makeGrid = () =>
