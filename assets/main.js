@@ -1,11 +1,13 @@
-let n = 64;
-let totalSquares = n * n;
-
-let size = 650/n;
+let n = 100;
 
 let makeGrid = () =>
 {
-    let x = `${size}px`;
+    // Grid size variables
+    let totalPixels = n * n;
+    let sizeOfPixel = 650/n;
+
+    // Size of each pixel in the grid converted into string plus the px
+    let x = `${sizeOfPixel}px`;
 
     // Access the container element
     let container = document.getElementById('container');
@@ -15,16 +17,14 @@ let makeGrid = () =>
     // Edit the grid pixel size
     container.style.setProperty('--size', x);
 
-    console.log(size);
-
-    console.log(typeof x);
-
-
-
-    for(let i = 0; i < (totalSquares); i++)
+    // Cycle to add every pixel in the grid
+    for(let i = 0; i < totalPixels; i++)
     {
+        // Each pixel is a div
         let square = document.createElement('div');
+        // Adding styles
         square.classList.add('box');
+        // Appending the div to form the grid
         container.appendChild(square);
     }
 
