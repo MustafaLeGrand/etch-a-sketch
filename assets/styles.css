@@ -79,11 +79,22 @@ button:hover {
     box-shadow: 6px 6px 6px rgba(17, 17, 17, 0.355);
 }
 
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#value {
+    /* display: inline; */
+}
+
 input:hover {
     transform: scale(1.06);
 }
 
-#size {
+#input {
     margin-bottom: 8px;
 }
 
